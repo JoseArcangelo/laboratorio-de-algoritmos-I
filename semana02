@@ -1,9 +1,0 @@
-base = float(input("Qual a base do retangulo?"))
-
-altura = float(input("Qual a altura do retangulo?"))
-
-area = base * altura
-
-perimetro = (base * 2) + (altura + 2)
-
-print("A area do retangulo é", area, "e o perimetro é", perimetro)
