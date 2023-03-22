@@ -1,12 +1,12 @@
-idade = int
-nome = str
-cpf = float
-dataDeNascimento = str
-peso = float
-cidade = str
-estado = str
-velocidade = float
-preco = float
+idade = int 
+nome = str 
+cpf = str
+dataDeNascimento = str 
+peso = float 
+cidade = str 
+estado = str  
+velocidade = float 
+preco = float 
 
 idade = 19
 nome = "José Arcangelo"
@@ -17,3 +17,5 @@ cidade = "Nova Palma"
 estado = "RS"
 velocidade = 80
 preco = 7.50
+
+print (idade, nome, cpf, dataDeNascimento, peso, cidade, estado, velocidade, preco)
