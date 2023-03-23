@@ -1,4 +1,4 @@
-anoDeNascimento = int(input("Qual o ano de seu aniversário?"))
+anoDeNascimento = int(input("Qual o ano de seu nascimento?"))
 
 idade = 2023 - anoDeNascimento
 
