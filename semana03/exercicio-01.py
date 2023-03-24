@@ -1,4 +1,4 @@
-horas = float(input("Quantidade de horas:"))
+horas = float(input("Quantidade de horas trabalhadas:"))
 
 salario = horas * 35
 
