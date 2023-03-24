@@ -1,4 +1,4 @@
-sexo = str(input("Digite e do sexo masculino ou feminino?"))
+sexo = str(input("Voce e do sexo masculino ou feminino?"))
 
 altura = float(input("Digite sua altura:"))
 
