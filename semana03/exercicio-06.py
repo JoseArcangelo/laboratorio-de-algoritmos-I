@@ -1,8 +1,8 @@
 numero = float(input("Digite um numero:"))
 
-if numero >= 1:
-    numeroFinal = numero * 2
-    print("O dobro desse valor sera:", numeroFinal)
+if numero >= 0:
+    dobro = numero * 2
+    print("O dobro  de", numero, "é:", dobro)
     
 else:
-    print("VALOR INVALDO!")
+    print("VALOR INVÁLIDO!")
