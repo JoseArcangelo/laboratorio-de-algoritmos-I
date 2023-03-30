@@ -5,6 +5,6 @@ idade = 2023 - anoDeNascimento
 print("Sua idade é", idade, "anos")
 
 if idade >= 16:
-    print("Voce ja pode votar!")
+    print("Voce já pode votar!")
 else:
-    print("Voce ainda nao pode votar!")
+    print("Voce ainda não pode votar!")
