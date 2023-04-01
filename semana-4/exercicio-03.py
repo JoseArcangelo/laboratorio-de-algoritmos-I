@@ -4,7 +4,7 @@ n2 = float(input("Informe a segunda nota:"))
 
 media = (n1 + n2) / 2
 
-frequencia = float(input("Informe sua % se frequencia:"))
+frequencia = float(input("Informe seu percentual(%) de frequencia :"))
 
 
 
@@ -16,4 +16,3 @@ elif media >=4 and media < 7 and frequencia > 75:
     
 else:
     print("Reprovado!")
-
