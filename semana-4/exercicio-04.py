@@ -1,6 +1,6 @@
-n1 = float(input("Informe a primeira nota do aluno:"))
+n1 = float(input("Informe a primeira nota parcial do aluno:"))
 
-n2 = float(input("Informe a segunda nota do aluno:"))
+n2 = float(input("Informe a segunda nota parcial do aluno:"))
 
 m = (n1 + n2) / 2
 
@@ -22,9 +22,10 @@ elif m >= 6 and m < 7.5:
 elif m >= 4 and m < 6:
     print("A primeira nota do aluno é", n1, ",a segunda é", n2, " e sua media é", m)
     print("Com isso o conceito do aluno será = D")
-    print("O aluno está REROVADO!")
+    print("O aluno está REPROVADO!")
     
 else:
     print("A primeira nota do aluno é", n1, ",a segunda é", n2, " e sua media é", m)
     print("Com isso o conceito do aluno será = E")
     print("O aluno está REPROVADO!")
+
