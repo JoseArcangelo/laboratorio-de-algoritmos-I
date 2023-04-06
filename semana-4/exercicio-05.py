@@ -1,13 +1,11 @@
 respostasPositivas = 0
 
-#### p = pergunta
-
 p1 = str(input("Telefonou para a vitima?(Sim/Não)")).upper()
 
 if p1 == "SIM":
     respostasPositivas += 1
     
-p2 = str(input("Esteve no local do crime?(Sim/Não)")).upper()
+p2 = str(input("Esteve no local do crime?(Sim/Nao)")).upper()
 
 if p2 == "SIM":
     respostasPositivas += 1
@@ -40,6 +38,5 @@ elif respostasPositivas == 5:
         
 else:
     print("INOCENTE!")
-        
         
         
