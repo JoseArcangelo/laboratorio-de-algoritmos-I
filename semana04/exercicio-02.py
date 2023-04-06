@@ -1,6 +1,8 @@
 valor = float(input("Infome o valor da peça:"))
 
-print("1- Pagamento á vista\n", "2-Pagamento em 2 vezes\n", "3- Pagamento em 3 vezes" )
+print("1-Pagamento á vista")
+print("2-Pagamento em 2 vezes")
+print("3-Pagamento em 3 vezes")
 
 opcao = int(input("Escolha uma opção:"))
 
