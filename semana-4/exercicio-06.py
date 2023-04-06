@@ -24,8 +24,7 @@ elif quantidadeTotal > 5:
     if quantidadeTotal >= 8 or valorTotal > 25:
         valorTotal = valorTotal * 0.9
         
-print("Foi adquirido", quantidadeMaca, "Kg de maças e", quantidadeMorango,
+    print("Foi adquirido", quantidadeMaca, "Kg de maças e", quantidadeMorango,
     "Kg de morangos, o valor total da compra foi de R$", valorTotal)
-        
         
     
