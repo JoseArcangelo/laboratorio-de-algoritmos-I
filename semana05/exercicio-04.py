@@ -6,7 +6,7 @@ maioresDeIdade = 0
 idadeEntre10e30 = 0
 
 while quantidadePessoas < 7:
-    #peso += float(input("Informe o peso dessa pessoa:"))
+    peso += float(input("Informe o peso dessa pessoa:"))
 
     idade = int(input("Informe a idade dessa pessoa:"))
     
