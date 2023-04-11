@@ -14,14 +14,17 @@ while totalPessoas < 10:
         
     elif elevador == "C":
         elevadorC += 1
-        
+
     else: 
         print("O prédio nao possui esse elevador informado!")
         
-elevadorA = (elevadorA * 100) / 10
+porcentagemA = (elevadorA * 100) / 10
 
-elevadorB = (elevadorB * 100) / 10
+porcentagemB = (elevadorB * 100) / 10
 
-elevadorC = (elevadorC * 100) / 10
+porcentagemC = (elevadorC * 100) / 10
 
-print("Dentre as 10 pessoas", elevadorA, "% utilizam o elevador A,", elevadorB, "% utilizam o elevador B e", elevadorC, "% utilizam o elevador C.")
+print("Dentro desse grupo de 10 pessoas", elevadorA, "utilezam mais o elevador A,",
+elevadorB, "utilizam o elevadorB e", elevadorC, "utilizam o C")
+print("Em porcentagem", porcentagemA, "dessas 10 pessoas utilizam o elevador A,", porcentagemB, "utilizam o elevador B e", 
+porcentagemC, "utilizam o C")
