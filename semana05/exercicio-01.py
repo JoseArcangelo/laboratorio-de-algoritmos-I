@@ -11,7 +11,6 @@ while opcao != 3:
     
     if opcao == 1:
         totalPessoas += 1
-        print(totalPessoas)
 
         idade += int(input("Informe a sua idade:"))
         mediaIdade = idade / totalPessoas
@@ -34,3 +33,4 @@ while opcao != 3:
             
     else:
         print("Opção inválida!")
+        
