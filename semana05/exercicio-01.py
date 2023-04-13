@@ -5,12 +5,13 @@ totalPessoas = 0
 
 while opcao != 3:
     print("1- Cadastrar pessoa")
-    print("2-Mostrar media parcial de altura e idade")
+    print("2- Mostrar media parcial de altura e idade")
     print("3- Sair")
     opcao = int(input("Escolha uma opção:"))
     
     if opcao == 1:
         totalPessoas += 1
+        print(totalPessoas)
 
         idade += int(input("Informe a sua idade:"))
         mediaIdade = idade / totalPessoas
@@ -20,14 +21,16 @@ while opcao != 3:
         
         
     elif opcao == 2:
-        print("A media parcial de idade é", mediaIdade, "e a de altura é", mediaAltura)
-        
-        
+        if totalPessoas == 0:
+            print("Nenhuma pessoa foi cadastrada ainda!")
+            
+        else:
+            print("A media parcial de idade é", mediaIdade, "e a de altura é", mediaAltura)
+
     elif opcao == 3:
+        
         print("A media de idade final e oficial é", mediaIdade, "e a de alutra é", mediaAltura)
         print("Saindo...")
-        
+            
     else:
         print("Opção inválida!")
-    
-        
