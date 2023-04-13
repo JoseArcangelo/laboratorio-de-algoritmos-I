@@ -4,11 +4,12 @@ idade = 0
 maioresDeIdade = 0
 idadeEntre10e30 = 0
 porcentagem = 0
-mediaIdade = 0
+mediaIdade = 0  
+
 while quantidadePessoas < 7:
     quantidadePessoas += 1
 
-    peso = float(input("Informe o peso dessa pessoa:"))
+    peso += float(input("Informe o peso dessa pessoa:"))
 
     idade = int(input("Informe a idade dessa pessoa:"))
     mediaIdade += idade
@@ -22,6 +23,6 @@ while quantidadePessoas < 7:
         
 mediaIdade = mediaIdade / quantidadePessoas
 
-print("A media das idades das 7 pessoas é:", mediaIdade)
+print("A media de idade das 7 pessoas e:", mediaIdade)
 print("A quantidade de pessoas maiores de idade é:", maioresDeIdade)
 print("Porcentagem de pesoas entre 10 e 30 anos", porcentagem, "%")
