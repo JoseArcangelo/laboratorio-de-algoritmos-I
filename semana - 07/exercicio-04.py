@@ -1,4 +1,4 @@
-quantidadePares = 0
+idadePares = 0
 quantidadeImpares = 0
 quantidadeZeros = 0
 for i in range(1, 11):
@@ -12,8 +12,7 @@ for i in range(1, 11):
     if numero == 0:
         quantidadeZeros += 1
         
-print("Total de numeros pares:", quantidadePares, "quantidade de numeros impares:", quantidadeImpares, "e qauntidade de zeros:", quantidadeZeros)
-        
+print("Total de numeros pares:", quantidadePares, "quantidade de numeros impares:", quantidadeImpares, "e quantidade de zeros:", quantidadeZeros)
     
    
     
