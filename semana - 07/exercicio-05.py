@@ -9,7 +9,7 @@ cabeloPreto = 0
 maiorIdade = 0
 feminino18a35VerdesLouros = 0
 
-for i in range(1, 3):
+for i in range(0, 15):
     certo = 0
 
     while certo == 0:
@@ -63,7 +63,7 @@ for i in range(1, 3):
             
     idade = int(input("Informe a sua idade:"))
     
-    if i == 1:
+    if i == 0:
         maiorIdade = idade
 
     if idade > maiorIdade:
@@ -89,6 +89,5 @@ print("A porcentagem de pessoas com os olhos azuis é", pOlhosAzuis, "% com olho
 print("A porcentagem de Loiros é", pCabeloLoiro, "% com cabelo castanho é", pCabeloCastanho, "% e com cabelo preto é", pCabeloPreto, "%")
 print("O grupo possui", pSexoFeminino, "% pessoas do sexo feminino e", pSexoMasculino, "% do sexo masculino", "num total de", (sexoMasculino + sexoFeminino), "pessoas")
         
-            
         
         
