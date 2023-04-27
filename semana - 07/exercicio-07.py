@@ -1,7 +1,5 @@
 n1 = int(input("Informe o primeiro numero:"))
-
 n2 = int(input("Informe o segundo numero:"))
-
 x = 0
 
 if n1 > n2:
