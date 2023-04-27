@@ -2,8 +2,8 @@ jornalA = 0
 jornalB = 0
 jornalC = 0
 
-for i in range(1, 11):
-    opcao = input("Qual jornal você mais lê? Digite A, B ou C para escolher:").upper()
+for i in range(0, 20):
+    opcao = input("Dentre os jornais A, B e C, qual você mais lê?").upper()
     if opcao == "A":
         jornalA += 1
     elif opcao == "B":
@@ -11,13 +11,13 @@ for i in range(1, 11):
     elif opcao == "C":
         jornalC += 1
     else:
-       print("Opção inválida. Tente novamente.")
+       print("Resposta invàlida!")
+       
+    print(i)
 
-
-
-porcentagemA = (jornalA / i) * 100
-porcentagemB = (jornalB / i) * 100
-porcentagemC = (jornalC / i) * 100
+porcentagemA = (jornalA / 20) * 100
+porcentagemB = (jornalB / 20) * 100
+porcentagemC = (jornalC / 20) * 100
 
 if jornalA >= jornalB and jornalA >= jornalC:
     if jornalB >= jornalC:
@@ -36,7 +36,5 @@ elif jornalC > jornalA and jornalC > jornalB:
         print("Em terceiro lugar ficou o jornal B com", porcentagemB, "% dos votos, em segundo lugar o jornal A com", porcentagemA, "% e em primeiro lugar o jornal C com", porcentagemC, "%")
     else:
         print("Em terceiro lugar ficou o jornal A com", porcentagemA, "% dos votos, em segundo lugar o jornal B com", porcentagemB, "% e em primeiro lugar o jornal C com", porcentagemC, "%")
-
-        
 
     
