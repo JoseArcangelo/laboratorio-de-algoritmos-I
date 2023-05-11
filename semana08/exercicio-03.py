@@ -8,6 +8,6 @@ def calcularValor(totalLaranjas):
 def main():
     totalLaranjas = int(input("Informe o total de laranjas:"))
     valorPagar = calcularValor(totalLaranjas)
-    print(valorPagar)
-    
+    print("O valor a ser pago será:", valorPagar)
+
 main()
