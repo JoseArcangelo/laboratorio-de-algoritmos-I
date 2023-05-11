@@ -6,5 +6,5 @@ def calcularDobroTriplo(numero):
 def main():
     numero = int(input("Informe o valor desejado:"))
     dobro, triplo = calcularDobroTriplo(numero)
-    print("O dobro de", numero, 'e', dobro, "e o triplo e", triplo)
+    print("O dobro de", numero, 'é', dobro, "e o triplo é", triplo)
 main()
