@@ -4,8 +4,5 @@ def exibirOla():
 def exibirTchau():
     print("Thau")
     
-def main():
-    exibirOla()
-    exibirTchau()
-    
-main()
+exibirOla()
+exibirTchau()
