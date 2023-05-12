@@ -20,7 +20,6 @@ def lerRespostas(totalA, totalB, totalC):
             else:
                 print("Resposta invalida!!! Por favor responda com alguma das opcoes que estao na pergunta!!")
                 
-            
     return totalA, totalB, totalC
 
 def porcentagens(totalA, totalB, totalC):
