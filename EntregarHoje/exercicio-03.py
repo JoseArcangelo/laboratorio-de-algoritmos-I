@@ -22,8 +22,7 @@ def lerDados(menorIdade, maiorIdade, mulheresSalario, mediaSalario):
     mediaSalario = media(totalSalarios)
     
     return maiorIdade, menorIdade, mulheresSalario, mediaSalario
-    
-            
+             
 def media(totalSalarios):
     media = totalSalarios / 10
     return media
