@@ -1,39 +1,36 @@
-def menu():
-    print("1 - Cadastrar pessoa")
-    print("2- Mostrar media parciais")
-    print("3- Sair")
-    opcao = int(input("Opcao:"))
-    return opcao
+def lerDados(totalIdade, maioresIdade, idade10e30):
+    for i in range(7):
+        idade = int(input("Informe sua idade:"))
+        #peso = float(input("Informe o seu peso:"))
+        totalIdade = totalIdade + idade
+        if idade >= 18:
+            maioresIdade += 1
+        
+        if idade >= 10 and idade <= 30:
+            idade10e30 += 1
+        
+    return totalIdade, maioresIdade, idade10e30
+        
 
-def cadastraPessoa(somaIdades, somaAlturas):
-    idade = int(input("Informe a idade:"))
-    altura = float(input("Informe a altura:"))
+def media(totalIdade):
+    m = totalIdade / 7
+    print("A media de idade dessas pessoas é", m)
     
-    somaIdades = somaIdades + idade
-    somaAlturas = somaAlturas + altura
+def lerMaioresIdades(maioresIdade):
+    print("O total de pessoas maiores de idade é", maioresIdade)
+
+def pMaioresIdade(maioresIdade):
+    p = (maioresIdade / 7) * 100
+    print("Porcentagem de pessoas maiores de idade:", p)
     
-    return somaIdades, somaAlturas
-    
-def mediaParcial(somaIdades, somaAlturas, qtdPessoas):
-    print("Media das idades:", somaIdades/qtdPessoas)
-    print("Media das alturas:", somaAlturas/qtdPessoas)
     
 def main():
-    opc = 0
-    somaIdades = 0
-    somaAlturas = 0
-    qtdPessoas = 0
-    while opc != 3:
-        opc = menu()
-        
-        if opc == 1:
-            somaIdades, somaAlturas = cadastraPessoa(somaIdades, somaAlturas)
-            qtdPessoas += 1
-            
-        elif opc == 2:
-            mediaParcial(somaIdades, somaAlturas, qtdPessoas)
-            
-        elif opc == 3:
-            mediaParcial(somaIdades, somaAlturas, qtdPessoas)
-    
+    totalIdade = 0
+    maioresIdade = 0
+    idade10e30 = 0
+    totalIdade, maioresIdade, idade10e30 = lerDados(totalIdade, maioresIdade, idade10e30)
+    media(totalIdade)
+    lerMaioresIdades(maioresIdade)
+    pMaioresIdade(maioresIdade)
 main()
+    
