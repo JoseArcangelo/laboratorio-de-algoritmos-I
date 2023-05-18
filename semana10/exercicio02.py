@@ -8,7 +8,6 @@ def verificar(numero):
         
     else:
         print("False")
- 
 
 def main():
     numero = lerNumero()
