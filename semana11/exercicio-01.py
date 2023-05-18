@@ -13,8 +13,6 @@ def maiorCem(numeros, qMaiores100):
         
     print("Quantidade de numeros maiores que 100:", qMaiores100)
 
-
-
 def main():
     qMaiores100 = 0
     numeros = []
@@ -22,3 +20,4 @@ def main():
     maiorCem(numeros, qMaiores100)
 
 main()
+    
