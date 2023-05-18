@@ -1,5 +1,5 @@
 def lerNumeros(numeros):
-    for i in range(2):
+    for i in range(10):
         n = int(input("informe um numero:"))
         numeros.append(n)
         
