@@ -1,5 +1,5 @@
 def pesquisa(sim, nao):
-    for i in range(5):
+    for i in range(20):
         teste = 0
         while teste != 1:
             pergunta = str(input("Resposta da pesquisa(Sim/Nao):")).upper()
