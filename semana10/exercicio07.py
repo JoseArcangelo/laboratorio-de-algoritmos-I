@@ -1,5 +1,5 @@
 def lerRespostas(jA, jB, jC):
-    for i in range(10):
+    for i in range(20):
         teste = 0
         while teste != 1:
             resposta = str(input("Informe qual destes jornais voce mais lê (A, B ou C):")).upper()
