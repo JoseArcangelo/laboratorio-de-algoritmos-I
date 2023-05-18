@@ -1,5 +1,12 @@
-def somarNumeros(a, b):
+def somarNumeros(a, b, r):
     r = a + b
-    print(r)
+    return r
     
-somarNumeros(5, 4)
+def main():
+    r = 0
+    a = int(input("Informe um numero:"))
+    b = int(input("Informe outro numero:"))
+    r = somarNumeros(a, b, r)
+    print("A soma de", a, "+", b, "é igual a", r)
+    
+main()
