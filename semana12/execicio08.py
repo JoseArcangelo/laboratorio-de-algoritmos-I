@@ -27,7 +27,7 @@ def removerItem(lista):
     return lista
 
 def removerTodosItens(lista):
-    lista = []
+    lista.clear()
     print("TODOS OS ITENS FORAM REMOVIDOS DA LISTA!!")
     return lista
 
@@ -56,7 +56,7 @@ def main():
                 
             elif opc == 4:
                  removerTodosItens(lista)
-                teste = 1
+                 teste = 1
 
             elif opc == 5:
                 print("Saido...")
