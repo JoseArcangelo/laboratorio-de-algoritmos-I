@@ -1,6 +1,6 @@
 def lerNumeros(listaNumeros):
     for i in range(5):
-        n = int(input("Informe um valor inteiro:"))
+        n = int(input("Informe um valor inteiro para inserir na lista:"))
         listaNumeros.append(n)
 
 def verificarNumero(listaNumeros):
