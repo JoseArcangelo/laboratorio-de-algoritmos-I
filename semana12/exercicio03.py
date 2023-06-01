@@ -21,8 +21,8 @@ def maiorMenorNumero(lista):
             
         contador += 1
         
-    print("Maior numero da lista:", maiorNumero, ",e sua posicao:", posicaoMaior)
-    print("Maior numero da lista:", menorNumero, ",e sua posicao:", posicaoMenor)    
+    print("Maior numero da lista:", maiorNumero, ", e sua posicao:", posicaoMaior)
+    print("Maior numero da lista:", menorNumero, ", e sua posicao:", posicaoMenor)    
 
 def main():
     lista = []
