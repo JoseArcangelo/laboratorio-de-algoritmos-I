@@ -98,4 +98,6 @@ def main():
         elif opc == 7:
             print("Saindo...")
             
+        else:
+            print("Opção invalida!)          
 main()
