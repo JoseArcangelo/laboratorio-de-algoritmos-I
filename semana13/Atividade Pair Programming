@@ -1,0 +1,101 @@
+
+def total_h_trabalhadas(horasTrabalhadas):
+    x = 44
+    for i in range(0,19):
+        horasTrabalhadas.append(x)
+    return horasTrabalhadas
+    
+def lerHorasAusentes(horasAusentes):
+    x = 0
+    for i in range(0,19):
+        horasAusentes.append(x)
+    return horasAusentes
+    
+def menu(opc):
+    print("1-verifivar horas e ausencia")
+    print("2-alterar total de horas trabalhadas ")
+    print("3-alterar o total de horas ausentes")
+    print("4-mostrar o salario do funcionario ")
+    print("5- mostarar o total de horas trabalhadas do funcionario")
+    print("6-resetar vetor")
+    print("7-sair")
+    opc = int(input("digite um opção: "))
+    return opc
+    
+def verificar_h(horasTrabalhadas, horasAusentes):
+    funcionario = int(input("informe o funcionario que deseja saber: "))
+    print("Horas trabalhadas desse funcionario:",horasTrabalhadas[funcionario])
+    print("Horas de trabalho ausente:", horasAusentes[funcionario])
+    
+def alterarHorasTrabalhadas(horasTrabalhadas, horasAusentes):
+    f = int(input("Informe o funcionario que deseja modeificar as horas TRABALHADAS:"))
+    x = int(input("Informe o horario atualizado de TRABALHO desse funcionario:"))
+    y = 44 - x
+    horasAusentes[f] = y
+    horasTrabalhadas[f] = x
+    print("Horas trabalhadas Atualizado!")
+    return horasTrabalhadas, horasAusentes
+    
+def alterarHorasAusentes(horasTrabalhadas, horasAusentes):
+    f = int(input("Informe o funcionario que deseja modeificar as horas de AUSENCIA:"))
+    x = int(input("Informe o horario atualizado de AUSENCIA desse funcionario:"))
+    y = 44 - x 
+    horasTrabalhadas[f] = y
+    horasAusentes[f] = x
+    print("Horas trabalhadas Atualizado!")
+    return horasTrabalhadas, horasAusentes
+
+def verificarSalario(horasTrabalhadas):
+    f = int(input("Informe o funcionario que deseja saber o salário"))
+    salario = horasTrabalhadas[f] * 50
+    print("O salario desse funcionario é:", salario)
+    
+def verHorasDeTrabalho(horasTrabalhadas, horasAusentes):
+    for i in range(0, 19):
+        print("Codigo:", i)
+        print("horas trabalhadas:", horasTrabalhadas[i], "Horas Ausentes:", horasAusentes[i])
+           
+def resetarVetores(horasAusentes, horasTrabalhadas):
+    horasTrabalhadas = []
+    horasAusentes = []
+    x = 44
+    for i in range(0,19):
+        horasTrabalhadas.append(x)
+        
+    x = 0
+    for i in range(0,19):
+        horasAusentes.append(x)
+    print("AS HORAS DE TRABALHO FORAM RESETADAS!")
+    return horasAusentes, horasTrabalhadas
+   
+def main():
+    opc = 0 
+    horasTrabalhadas  = []
+    horasAusentes = []
+    horasTrabalhadas =  total_h_trabalhadas(horasTrabalhadas)
+    horasAusentes = lerHorasAusentes(horasAusentes)
+    
+    while opc != 7:
+        opc = menu(opc)
+        if opc == 1:
+            verificar_h(horasTrabalhadas, horasAusentes)
+            
+        elif opc == 2:
+            alterarHorasTrabalhadas(horasTrabalhadas, horasAusentes)
+            
+        elif opc == 3:
+            alterarHorasAusentes(horasTrabalhadas, horasAusentes)
+        
+        elif opc == 4:
+            verificarSalario(horasTrabalhadas)
+            
+        elif opc == 5:
+            verHorasDeTrabalho(horasTrabalhadas, horasAusentes)
+            
+        elif opc == 6:
+            horasAusentes, horasTrabalhadas = resetarVetores(horasAusentes, horasTrabalhadas)
+        
+        elif opc == 7:
+            print("Saindo...")
+            
+main()
